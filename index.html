@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="AgenciaEmpleo">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="lib/ng-table/ng-table.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+	<title>Agencia de Empleo</title>
+</head>
+<body ng-controller="listadoPrincipal">
+		<div>
+	<table class="table">
+		<th>Id</th>
+    	<th>Nombres</th>
+   		<th>Apellidos</th>
+   		<th>Cédula</th>
+   		<th>Edad</th>
+   		<th>Género</th>
+   		<th>Dirección</th>
+   		<th>Teléfonos</th>
+   		<th>E-mail</th>
+   		
+    	<tr ng-repeat= "d in datos">
+    		<td>{{d.id}}</td>
+    		<td>{{d.nombre}}</td>
+    		<td>{{d.apellido}}</td>
+    		<td>{{d.dni}}</td>
+    	</tr>
+  </table>
+
+		</div>
+
+
+<!-- Librerías necesarias -->
+		<script src ="lib/angular/angular.min.js"></script>
+		<script src ="lib/ui-router/angular-ui-router.min.js"></script>
+		<script src ="lib/ng-table/ng-table.min.js"></script>
+		<script src ="lib/jQuery/jquery2.2.4.min.js"></script>
+		<script src ="lib/bootstrap/bootstrap.min.js"></script>
+
+<!-- Archivos del proyecto -->
+
+		<script src ="js/agenciaEmpleo.js"></script>
+
+</body>
+</html>

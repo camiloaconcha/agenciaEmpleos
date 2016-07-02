@@ -1,0 +1,19 @@
+id
+nombres
+apellidos
+cedula
+edad
+genero
+direccion
+telefonos
+email
+estudiosRealizados
+profesion
+area a desempeñar
+labor a desempeñar
+jornada
+disponibilidad
+conocimientos
+experiencia
+antecedentes
+foto
